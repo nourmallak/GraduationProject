@@ -11,8 +11,6 @@ import 'swiper/css/effect-coverflow';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 import 'react-toastify/dist/ReactToastify.css';
-import invitation from "../../../../images/insidaArchive/invitation.png";
-import questions from '../../../../images/insidaArchive/questions.png';
 import style from "../InsideArchive/InsideArchive.module.css";
 import logo from '../../../../images/logo/logo.png'
 import { useParams } from "react-router-dom";
