@@ -9,7 +9,7 @@ import {
   FaLinkedin,
   FaTrashAlt,
 } from "react-icons/fa";
-import { HomePageContext } from "../../../../Context/HomePageContext";
+import { HomePageContext } from "../../../../context/HomePageContext";
 import { useNavigate } from "react-router-dom";
 import "./HeroDashBorad.css";
 import Swal from "sweetalert2";
