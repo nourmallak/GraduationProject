@@ -8,7 +8,7 @@ import University from './UniversityHome/University';
 import PhotoSlider from './PhotoSlider/PhotoSlider';
 import Community from './Community/Community';
 import FAQ from './FAQ/FAQ';
-import ContactUs from './ContactUs/ContactUs.JSX';
+import ContactUs from './ContactUs/ContactUs';
 import Experiences from './Experiences/Experiences'
 import TestimonialCard from './TestimonialCard/TestimonialCard'
 
