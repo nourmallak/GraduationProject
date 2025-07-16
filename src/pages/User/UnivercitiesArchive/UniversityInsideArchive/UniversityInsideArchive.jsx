@@ -12,7 +12,6 @@ import 'swiper/css/effect-coverflow';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 import 'react-toastify/dist/ReactToastify.css';
-import questions from '../../../../images/insidaArchive/questions.png';
 import style from "../UniversityInsideArchive/UniversityInsideArchive.module.css";
 import logo from '../../../../images/logo/logo.png'
 import { useParams } from "react-router-dom";
@@ -220,7 +219,7 @@ export default function InsideArchive() {
                                 whileHover={{ scale: 1.05 }}
                                 whileTap={{ scale: 0.95 }}
                                 className={style.invitation}
-                                src={competition.image2}
+                                src={competition?.image2}
                                 alt="Invitation"
                             />
                         </motion.div>
@@ -664,7 +663,7 @@ export default function InsideArchive() {
                                     <div className={style.imageWrapper}>
                                         <motion.img
                                             whileHover={{ scale: 1.05 }}
-                                            src={competition?.imageForQuestionsPDF || questions}
+                                            src={competition?.imageForQuestionsPDF}
                                             alt="Questions"
                                             className={style.questionImage}
                                         />
