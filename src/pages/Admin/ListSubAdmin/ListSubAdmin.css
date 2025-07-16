@@ -1,0 +1,534 @@
+/* الحاوية الأساسية */
+.table-container {
+  max-width: 90%;
+  margin: 0;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  margin-left: 20px;
+  margin-top: 20px;
+ 
+}
+.table-listsubadmin tbody tr:hover{
+  background-color: #F6EFD9;
+    cursor: pointer;
+}
+
+/* العنوان وزر الإضافة */
+.table-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.table-title {
+  font-size: 28px;
+  color: #333;
+}
+
+.add-btn {
+  padding: 8px 18px;
+  margin-top: 20px;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.3s ease, color 0.3s ease, background-color 0.3s ease;
+  color: #f8800f;
+  border-radius: 50px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  background-color: #F6EFD9;
+  width: 100%;
+  font-size: 16px;
+}
+
+.add-btn:hover {
+  transform: scale(.8);
+  color: #fff;
+  background-color: #f8a74f;
+  box-shadow: 0 8px 16px #f8800f;
+}
+
+/* مربع البحث */
+
+
+.search-icon {
+  color: #888;
+  font-size: 18px;
+}
+
+/* أيقونة البحث بجانب اسم "Name" و "University Name" */
+.search-icon-inline {
+  margin-left: 5px;
+  cursor: pointer;
+  font-size: 11px;
+  color: #888;
+  transition: color 0.3s ease;
+  
+}
+
+.search-icon-inline:hover {
+  color: #f8800f;
+}
+
+/* مربع البحث داخل العمود */
+.search-inline-input {
+  margin-left: 5px;
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+/* تنسيق الجدول */
+.table-listsubadmin {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0 15px;
+  border-top: 2px solid #ddd;
+}
+
+.table-listsubadmin th, .table td {
+  padding: 15px;
+  text-align: left;
+  font-size: 16px;
+  border-bottom: 2px solid #ddd;
+  color: #555;
+  vertical-align: middle;
+}
+
+.table-listsubadmin th {
+  color: black;
+  font-weight: bold;
+}
+
+/* تنسيق الصورة */
+.logoImg {
+  width: 40px;
+  height: 40px;
+  margin-right: 15px;
+  border-radius: 50%;
+  vertical-align: middle;
+}
+
+.table-listsubadmin td div {
+  display: flex;
+  align-items: center;
+}
+
+/* تأثير hover على الصف */
+.table-listsubadmin tbody tr:hover {
+  background-color: #F6EFD9;
+  cursor: pointer;
+}
+
+/* أيقونات الأكشن */
+.actionsdash svg {
+  cursor: pointer;
+  font-size: 22px;
+  color: #333;
+  transition: color 0.3s ease;
+  margin-right: 15px;
+}
+
+.actionsdash svg:hover {
+  color: #f8a74f;
+}
+
+/* تصميم Responsive */
+@media (max-width: 768px) {
+  .search-box {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+
+  .add-btn {
+    width: 100%;
+    margin-top: 10px;
+  }
+  
+  .search-container {
+    flex-direction: column;
+  }
+}
+/* إضافة تأثيرات البحث */
+.search-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  gap: 15px;
+}
+
+.search-box {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 5px 10px;
+  width: 45%;
+}
+
+.search-box input {
+  border: none;
+  outline: none;
+  padding: 8px;
+  font-size: 14px;
+  width: 100%;
+}
+
+.search-box input::placeholder {
+  color: #888;
+}
+
+/* تعديل الأيقونة داخل مربع البحث */
+.search-icon {
+  font-size: 18px;
+  color: #888;
+  margin-right: 8px;
+}
+
+/* إضافة تأثيرات للأيقونات أثناء التفاعل */
+.search-icon-inline {
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.search-icon-inline:hover {
+  color: #f8800f;
+}
+
+/* إضافة تأثيرات للجدول */
+.table-listsubadmin tbody tr:hover {
+  background-color: #f6efd9;
+  cursor: pointer;
+}
+
+.table-listsubadmin th, .table-listsubadmin td {
+  padding: 15px;
+  text-align: left;
+  font-size: 16px;
+  border-bottom: 1px solid #ddd;
+  color: #555;
+  vertical-align: middle;
+}
+
+/* تصميم لواجهة موبايل */
+@media (max-width: 768px) {
+  .search-container {
+    flex-direction: column;
+  }
+
+  .search-box {
+    width: 100%;
+  }
+
+  .add-btn {
+    width: 100%;
+    margin-top: 10px;
+  }
+}
+/* تنسيق الحاوية الخاصة بمربعات البحث */
+.search-container {
+  display: flex;
+  justify-content: center;  /* لجعل المربعات في المركز */
+  gap: 15px;  /* المسافة بين المربعات */
+  margin-bottom: 20px;
+}
+
+.search-box {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ddd;
+  border-radius: 28px;  /* إضافة الحواف المدورة */
+  padding: 8px 12px;
+  width: 300px;  /* عرض متوسط للمربعات */
+}
+
+.search-box input {
+  border: none;
+  outline: none;
+  border-radius: 18px; 
+  padding: 8px;
+  font-size: 14px;
+  width: 100%;  /* ليأخذ المساحة المتاحة داخل المربع */
+}
+
+.search-box input::placeholder {
+  color: #888;
+}
+
+.search-icon {
+  font-size: 18px;
+  color: #888;
+  margin-right: 8px;
+}
+
+/* تأثير الـ hover على الأيقونات */
+.search-icon-inline {
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.search-icon-inline:hover {
+  color: #f8800f;
+}
+
+/* تأثيرات على الجدول */
+.table tbody tr:hover {
+  background-color: #f6efd9;
+  cursor: pointer;
+}
+
+.table-listsubadmin th, .table-listsubadmin td {
+  padding: 15px;
+  text-align: left;
+  font-size: 16px;
+  border-bottom: 1px solid #ddd;
+  color: #555;
+  vertical-align: middle;
+}
+
+/* تصميم لواجهة موبايل */
+@media (max-width: 768px) {
+  .search-container {
+    flex-direction: column;
+  }
+
+  .search-box {
+    width: 100%;
+  }
+
+  .add-btn {
+    width: 100%;
+    margin-top: 10px;
+  }
+}
+/* التنسيق العام للـ Modal
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+/* محتوى الـ Modal 
+.modal-content {
+  background-color: white;
+  padding: 30px;
+  border-radius: 8px;
+  width: 600px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+.me-3-add {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.adv-img-upload {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #ddd;
+  cursor: pointer;
+}
+
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+
+.form-actions {
+  display: flex;
+  justify-content: space-between;
+}
+
+.save-btn, .close-btn {
+  padding: 12px 24px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+.save-btn {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.close-btn {
+  background-color: #f44336;
+  color: white;
+}
+
+.save-btn:hover, .close-btn:hover {
+  opacity: 0.8;
+} */
+.search-container {
+  display: flex;
+  gap: 10px;
+  margin: 20px 0;
+  justify-content: center;
+}
+
+.search-container {
+  display: flex;
+  gap: 20px;
+  margin: 20px 0;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.filter-container {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.search-box {
+  position: relative;
+  display: flex;
+  align-items: center;
+
+  padding: 5px 10px;
+  margin: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.search-icon, .filter-icon {
+  margin-right: 5px;
+  color: #888;
+}
+
+.search-input, .filter-input {
+  border: none;
+  outline: none;
+  background: transparent;
+  padding: 5px;
+  font-size: 16px;
+}
+
+.search-input::placeholder, .filter-input::placeholder {
+  color: #aaa;
+}
+
+.select-input {
+  background-color: #f5f5f5;
+  border: none;
+  outline: none;
+  padding: 5px 10px;
+  border-radius: 8px;
+  font-size: 16px;
+  color: #333;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.2s ease;
+}
+
+.select-input:hover {
+  background-color: #eaeaea;
+}
+
+.select-input:focus {
+  background-color: #e0e0e0;
+}
+/* حاوية البحث والفلتر */
+.search-filter-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+/* حاوية البحث */
+.search-container {
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.se-internal{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap:10px;
+}
+
+/* حاوية الفلتر */
+.filter-container {
+  display: flex;
+  align-items: center;
+}
+
+.toggle-view-btn {
+  padding: 8px 18px;
+  border: none;
+  cursor: pointer;
+  background-color: #f6efd9;
+  color: #f8800f;
+  font-size: 14px; /* Slightly smaller font size */
+  border-radius: 50px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+  width: auto; /* Make width auto to avoid stretching */
+  margin-top: 10px;
+}
+
+.toggle-view-btn:hover {
+  transform: scale(0.8);
+  background-color: #f8a74f;
+  color: white;
+}
+/* داخل ملف CSS مثل ListAdvister.css أو ملف global */
+.swal2-icon.custom-swal-icon {
+  border-color: red !important;
+  color: red !important;
+}
+
+/* ListSubAdmin.css */
+
+.pagination .page-item.active .page-link {
+  background-color: #f8800f !important; /* لون برتقالي */
+  border-color: #f8800f !important;
+  color: white !important;
+ 
+}
+.page-item {
+  margin-right: 8px;
+}
+
+.pagination .page-link {
+  color: #f8800f;
+  border-radius: 6px;
+}
+
+.pagination .page-link:hover {
+  background-color: #f8800f22; /* خلفية خفيفة عند التمرير */
+  color: #f8800f;
+}

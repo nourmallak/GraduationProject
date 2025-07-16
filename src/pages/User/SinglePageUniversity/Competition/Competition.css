@@ -1,0 +1,138 @@
+.competition-section {
+  max-width: 1200px;
+  margin: 120px auto;
+  padding: 40px;
+  background: linear-gradient(to right, #fff8e1, #fff3cd);
+  border-radius: 20px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 0.6s ease-in-out;
+}
+
+.section-title {
+  font-size: 2rem;
+  color: #333;
+  text-align: center;
+  margin-bottom: 30px;
+  font-weight: bold;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.competition-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  align-items: center;
+  justify-content: center;
+}
+
+.competition-image-container {
+  flex: 1;
+  min-width: 300px;
+  text-align: center;
+}
+
+.competition-main-image {
+  width: 100%;
+  max-width: 450px;
+  border-radius: 16px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease;
+}
+
+.competition-main-image:hover {
+  transform: scale(1.03);
+}
+
+.competition-text {
+  flex: 1;
+  min-width: 300px;
+  background: white;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.competition-text h3 {
+  font-size: 24px;
+  color: #444;
+}
+
+.competition-text p {
+  font-size: 16px;
+  color: #666;
+  line-height: 1.6;
+}
+
+.btn-primary-Copm,
+.btn-secondary-Copm {
+  display: inline-block;
+  padding: 12px 24px;
+  font-size: 15px;
+  font-weight: 600;
+  border-radius: 8px;
+  text-decoration: none;
+
+  transition: all 0.3s ease-in-out;
+}
+
+.btn-primary-Copm {
+  padding: 12px 16px;
+  color: black;
+  text-decoration: underline;
+  font-weight: 600;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.btn-primary-Copm:hover {
+  color: #f8a70f;
+}
+
+.btn-secondary-Copm {
+  background-color: transparent;
+  border: 2px solid #f8a70f;
+  color: #f8a70f;
+  margin-top: 20px;
+}
+
+.btn-secondary-Copm:hover {
+  background-color: #f8a70f;
+  color: white;
+}
+
+.competition-footer {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.no-competition-message {
+  text-align: center;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .competition-container {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .competition-text {
+    padding: 20px;
+  }
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

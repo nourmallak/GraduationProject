@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+.news-card {
+  display: flex;
+  gap: 160px;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.1);
+  padding: 50px;
+  max-width: 80%;
+  margin: 20px auto;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  transition: box-shadow 0.3s ease;
+  background-image: linear-gradient(270deg, rgba(246, 239, 217, 0.63) 31%, rgba(248, 167, 15, 0.5) 56%); 
+  
+}
+
+.news-card:hover {
+  box-shadow: 0 5px 15px rgb(0 0 0 / 0.2);
+}
+
+.news-image-wrapper {
+  flex-shrink: 0;
+  width: 280px;
+  height: 290px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgb(0 0 0 / 0.15);
+  margin-left: 40px;
+}
+.latest-news-title{
+   font-family: "Playfair Display", serif;
+   text-transform: uppercase;
+}
+
+.news-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.news-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  
+}
+
+.news-title {
+  margin: 0 0 12px 0;
+  font-size: 1.4rem;
+  color: #1e293b; 
+  font-weight: 700;
+}
+
+.news-description {
+  font-size: 1rem;
+  color: #4b5563; 
+  line-height: 1.5;
+  margin-bottom: 12px;
+  white-space: pre-wrap;
+}
+
+.read-more-btn {
+  background: none;
+  border: none;
+  color: #f8a70f; 
+  cursor: pointer;
+  font-weight: 600;
+  margin-left: 6px;
+  font-size: 0.95rem;
+  transition: color 0.2s ease;
+}
+
+.read-more-btn:hover {
+ color: #f8a70f; 
+  text-decoration: underline;
+}
+
+.news-footer {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.85rem;
+  color: #6b7280; 
+}
+
+.news-author {
+  font-weight: 600;
+}
+
+.news-date {
+  font-style: italic;
+}
+
+.loading-text, .no-post-text {
+  text-align: center;
+  font-size: 1.1rem;
+  color: #6b7280;
+  margin-top: 40px;
+}
+.latest-news-section {
+  padding: 20px;
+  background-color: #fefefe;
+}
+
+.latest-news-title {
+  font-size: 28px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px;
+  text-align: center;
+}

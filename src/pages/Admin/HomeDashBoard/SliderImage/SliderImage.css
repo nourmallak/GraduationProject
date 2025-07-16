@@ -1,0 +1,102 @@
+/* Main container for the slider */
+.sliderPh {
+  width: 90%;
+  max-width: 1000px;
+  margin: 50px auto;
+  padding: 2rem;
+  border-radius: 10px;
+  text-align: center;
+}
+
+/* Container for each image */
+.image-container-slider {
+  width: 100%;
+  height: 500px; /* ثابت لحجم موحّد */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  border-radius: 10px;
+  position: relative; /* Ensure delete icon is positioned relative to this container */
+}
+
+/* Styling for the slider images */
+.slider-image-slider {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain; /* يحافظ على جودة الصورة */
+  border-radius: 10px;
+}
+
+/* Hide the delete icon by default */
+.delete-icon-imagesDsh {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.6);
+  border: none;
+  padding: 10px;
+  border-radius: 50%;
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+  transition: opacity 0.3s, background-color 0.3s;
+  opacity: 0; /* Hidden by default */
+}
+
+/* Show the delete icon when hovering over the image container */
+.image-container-slider:hover .delete-icon-imagesDsh  {
+  opacity: 1; /* Make the delete icon visible */
+  background-color: rgba(255, 0, 0, 0.7); /* Highlight background on hover */
+}
+
+/* Slick dots styling */
+.sliderPh .slick-dots li button:before {
+  font-size: 0.8rem;
+  color: #f8a70f;
+}
+
+.sliderPh .slick-dots li.slick-active button:before {
+  color: #f8a70f;
+}
+
+/* Slick arrows styling */
+.sliderPh .slick-prev,
+.sliderPh .slick-next {
+  width: 40px;
+  height: 40px;
+  z-index: 1;
+}
+
+.sliderPh .slick-prev:before,
+.sliderPh .slick-next:before {
+  font-size: 30px;
+  color: #333;
+  opacity: 1;
+}
+
+@media (max-width: 768px) {
+  .image-container-slider {
+    height: 250px;
+  }
+}
+.delete-all-container {
+  text-align: right;
+  margin-bottom: 1rem;
+}
+
+.delete-all-button {
+  background-color: #e53935;
+  color: white;
+  padding: 10px 15px;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.delete-all-button:hover {
+  background-color: #c62828;
+}

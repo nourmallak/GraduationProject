@@ -1,0 +1,53 @@
+.add-images-wrapper {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 30px;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.form-title-add-images {
+  font-size: 28px;
+  color: #333;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.add-images-form-add-images {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.file-label-add-images {
+  font-size: 18px;
+  color: #555;
+  font-weight: 500;
+}
+
+.file-input-add-images {
+  padding: 40px;
+  border: 2px dashed #e69500;
+  border-radius: 10px;
+  width: 100%;
+  cursor: pointer;
+}
+
+.submit-button-add-images {
+  padding: 10px 25px;
+  background-color: #e69500;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.submit-button-add-images:hover {
+  background-color: #e69600e6;
+}

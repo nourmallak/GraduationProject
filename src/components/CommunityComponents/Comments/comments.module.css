@@ -1,0 +1,195 @@
+.commentsContainer {
+    background: #fcf6ed;
+    border-radius: 12px;
+    border: 1px solid #eee;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.commentspadding {
+    padding: 10px;
+}
+
+.commentsList {
+    margin-bottom: 20px;
+    max-height: 500px;
+    overflow-y: auto;
+    padding-right: 10px;
+}
+
+.commentsList::-webkit-scrollbar {
+    width: 6px;
+}
+
+.commentsList::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 10px;
+}
+
+.commentsList::-webkit-scrollbar-thumb {
+    background: #F8A70F;
+    border-radius: 10px;
+}
+
+.comment {
+    background: #ffffff;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+    border: 1px solid #F8A70F;
+}
+
+.comment:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.commentHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+.userInfo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.commentHeader a:link,
+.commentHeader a:visited,
+.commentHeader a:hover,
+.commentHeader a:active {
+    text-decoration: none;
+    color: inherit;
+}
+
+.commentHeader small {
+    display: block;
+    color: #888;
+    font-size: 0.75rem;
+    margin-top: 2px;
+}
+
+.userImage {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #F8A70F;
+}
+
+.userName {
+    font-weight: 600;
+    color: #333;
+    font-size: 0.95rem;
+}
+
+.commentContent {
+    color: #555;
+    line-height: 1.6;
+    font-size: 0.9rem;
+    padding-left: 52px; 
+}
+
+.commentForm {
+    margin-top: 1.5rem;
+}
+
+.formGroup {
+    display: flex;
+    gap: 0.75rem;
+}
+
+.commentInput {
+    flex-grow: 1;
+    border-radius: 8px;
+    border: 1px solid #e0e0e0;
+    padding: 0.75rem 1rem;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+}
+
+.commentInput:focus {
+    border-color: #F8A70F;
+    box-shadow: 0 0 0 3px rgba(248, 167, 15, 0.15);
+    outline: none;
+}
+
+.submitButton {
+    background-color: #F8A70F;
+    border: none;
+    border-radius: 8px;
+    width: 42px;
+    height: 42px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.submitButton svg {
+    width: 18px;
+    height: 18px;
+    transition: transform 0.3s ease;
+}
+
+.submitButton:hover {
+    background-color: #f5b333;
+}
+
+.submitButton:hover svg {
+    transform: translateX(2px);
+}
+
+.submitButton:disabled {
+    opacity: 0.7;
+    cursor: not-allowed;
+    background-color: #F8A70F;
+}
+
+
+.noComments {
+    text-align: center;
+    color: #888;
+    padding: 20px;
+    font-style: italic;
+}
+
+.deleteButton {
+    background: none;
+    border: none;
+    color: #F8A70F;
+    cursor: pointer;
+    padding: 5px;
+    border: 1px solid #F8A70F;
+    border-radius: 8px;
+    background-color: #FFFCF5;
+    font-size: 12px;    
+    transition: all 0.2s ease;
+
+}
+
+.deleteButton:hover {
+    text-decoration: underline;
+}
+
+.loginLink {
+    background: none;
+    border: none;
+    color: #F8A70F !important;
+    cursor: pointer;
+    padding: 5px;
+    border: 1px solid #F8A70F;
+    border-radius: 8px;
+    background-color: #FFFCF5;
+    font-size: 12px;    
+    transition: all 0.2s ease;
+}
+
+.loginLink a{
+    text-decoration: none;
+}

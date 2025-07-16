@@ -1,0 +1,362 @@
+/* إعدادات الخلفية */
+.marquee-container {
+    width: 100%;
+    overflow: hidden;
+    background-image: linear-gradient(180deg, rgba(246, 239, 217, 0.7) 22%, rgba(248, 167, 15, 0.7) 53%);
+    padding: 10px 0;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 80px;
+}
+
+/* تأثير حركة النص */
+.marquee-wrapper {
+    display: flex;
+    width: 200%;
+    animation: marquee 10s linear infinite;
+}
+
+/* تنسيق النصوص في الـ Marquee */
+.marquee-content {
+    display: flex;
+    font-size: 28px;
+    font-weight: bold;
+    color: #F6EFD9;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    white-space: nowrap;
+    gap: 20px;
+    flex-shrink: 0;
+}
+
+/* حركة التمرير */
+@keyframes marquee {
+    from { transform: translateX(0); }
+    to { transform: translateX(-100%); }
+}
+
+/* تأثير التلاشي عند الحواف */
+.marquee-container::before,
+.marquee-container::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 10%;
+    height: 100%;
+    color: aliceblue;
+    z-index: 2;
+}
+
+.marquee-container::before {
+    left: 0;
+}
+
+.marquee-container::after {
+    right: 0;
+}
+
+/* تحسين الحركة عند تمرير الماوس */
+.marquee-container:hover .marquee-wrapper {
+    animation-play-state: paused;
+}
+
+/* إعدادات الحاوية الرئيسية */
+.container-suffix {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(315deg, #f9f4d8, #f9b14c, #fff5d9);
+    padding: 50px;
+    margin: auto;
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.15);
+    flex-direction: column;
+    animation: backgroundShift 6s infinite alternate ease-in-out;
+}
+
+/* 
+@keyframes backgroundShift {
+    0% {
+        background: linear-gradient(315deg, #f9f4d8, #f9b14c, #fff5d9);
+    }
+    100% {
+        background-image: linear-gradient(45deg, rgba(246, 239, 217, 0.63) 22%, rgba(248, 167, 15, 0.5) 53%);
+    }
+}
+
+
+.compSuffix {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    width: 85%;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInSlide 1.5s ease-in-out forwards;
+}
+
+
+@keyframes fadeInSlide {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+.compSuffix-text {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.compSuffix-text h1 {
+    font-size: 3vw;
+    font-weight: bold;
+    opacity: 0;
+    transform: translateY(-20px);
+    animation: fadeDown 1.5s ease-in-out forwards 0.5s;
+    font-family: var(--fontHeader);
+}
+
+
+@keyframes fadeDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+.compSuffix-text p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #918672;
+    text-align: left;
+    margin: 15px 0;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeUp 1.2s ease-in-out forwards 1s;
+}
+
+
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+@media (max-width: 800px) {
+    .compSuffix {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .compSuffix-text {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+
+.compSuffix-image {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.compSuffix-image img {
+    max-width: 80%;
+    height: auto;
+}
+
+
+.copmSuffix-boxes {
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    margin-top: 20px;
+    opacity: 0;
+    transform: translateY(30px);
+    animation: slideUpFade 1.5s ease-in-out forwards 0.5s;
+}
+
+
+.boxComp {
+    background-color: #F6EFD9;
+    padding: 20px;
+    border-radius: 10px;
+    width: 30%;
+    text-align: center;
+    color: black;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInBox 1.2s ease-in-out forwards 0.7s;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    box-shadow: 0 1px 5px black;
+}
+
+
+.boxComp h3 {
+    margin-bottom: 10px;
+    font-size: 22px;
+}
+
+.boxComp p {
+    font-size: 16px;
+}
+
+.boxComp:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+
+@keyframes slideUpFade {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInBox {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+@media (max-width: 768px) {
+    .copmSuffix-boxes {
+        flex-direction: column;
+        width: 90%;
+        align-items: center;
+    }
+
+    .boxComp {
+        width: 80%;
+        margin-bottom: 10px;
+    }
+}*/
+.headingCompetition {
+    width: 70%;
+    text-align: center;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+.headingCompetition h1 {
+    font-weight: bold;
+    font-size: 36px;
+}
+
+.containerSuffix {
+    width: 90%;
+    margin: 0 auto;
+    padding: 10px 20px;
+}
+
+.aboutSuffix {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.aboutSuffixImage {
+    flex: 1;
+    overflow: hidden;
+    max-width: 500px;
+}
+
+.aboutSuffixImage img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.5s ease;
+    border-radius: 10px;
+}
+
+.aboutSuffixImage img:hover {
+    transform: scale(1.05);
+}
+
+.aboutSuffixContent {
+    flex: 2;
+    margin-top: 20px;
+    padding: 10px;
+}
+
+.aboutSuffixContent p {
+    line-height: 1.6;
+    font-size: 18px;
+    color: #444;
+}
+
+
+
+@media (max-width: 992px) {
+    .aboutSuffix {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .aboutSuffixImage,
+    .aboutSuffixContent {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .aboutSuffixContent p {
+        font-size: 16px;
+    }
+
+    .headingCompetition h1 {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 480px) {
+    .headingCompetition h1 {
+        font-size: 20px;
+    }
+
+    .aboutSuffixContent p {
+        font-size: 15px;
+    }
+
+    .containerSuffix {
+        padding: 5px;
+    }
+}

@@ -1,0 +1,57 @@
+.loaderContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #FFFBF3;
+}
+
+.loaderContent {
+  text-align: center;
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+.logo {
+  width: 120px;
+  animation: pulse 1.8s infinite ease-in-out;
+  transition: transform 0.3s ease;
+}
+
+.loadingText {
+  margin-top: 20px;
+  font-size: 18px;
+  color: #555;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  animation: fadeText 2s infinite ease-in-out;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.08);
+    opacity: 0.85;
+  }
+}
+
+@keyframes fadeText {
+  0%, 100% {
+    opacity: 0.4;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

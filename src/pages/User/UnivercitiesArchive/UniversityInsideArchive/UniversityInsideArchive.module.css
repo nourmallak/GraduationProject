@@ -1,0 +1,719 @@
+.body {
+  background-image: url('../../../../images/background/backgroundS.png');
+}
+
+.firstSection {
+  display: flex;
+  justify-content: center;
+}
+
+.firstSection h1{
+  margin: auto;
+}
+
+.title {
+  text-align: center;
+  margin-top: 40px;
+  font-weight: 800;
+}
+
+.invitation {
+  margin: auto;
+  margin-bottom: 100px;
+  margin-top: 40px;
+}
+
+img.invitation {
+    width: 800px; 
+    height: 500px; 
+    object-fit: cover !important; 
+}
+
+.body h2 {
+  font-weight: 800;
+  margin-bottom: 50px;
+}
+
+.body p {
+  margin-top: 10px;
+  color: #918672;
+}
+
+
+.carouselContainer {
+  width: 100%;
+  overflow: visible;
+  margin: auto;
+  margin-top: 50px;
+}
+
+.swiperContainer {
+  padding-top: 20px;
+  padding-bottom: 50px;
+}
+
+.swiperSlide {
+  width: 520px !important; 
+  height: 300px !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.swiperSlide img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+  transition: transform 0.3s ease-in-out;
+  z-index: 1;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+}
+
+.imageControls {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  z-index: 10;
+}
+
+.deleteBtn {
+  background-color: #f8a70f;
+  border: none;
+  color: white;
+  padding: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+:global(.swiper-button-next),
+:global(.swiper-button-prev) {
+  background: none !important;
+  border: none;
+  color: #f8a70f;
+  font-size: 20px;
+}
+
+:global(.swiper-pagination-bullet) {
+  background-color: #ccc;
+  opacity: 1;
+}
+
+:global(.swiper-pagination-bullet-active) {
+  background-color: #f8a70f !important;
+}
+
+
+.description {
+  animation: fadeIn 1s ease-in-out;
+}
+
+.list {
+  list-style: none;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 50px;
+}
+
+.list li svg {
+  width: 15px;
+  margin-right: 8px;
+}
+
+.teamsContainer {
+  margin-top: 2rem;
+  padding: 1.5rem;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header .title {
+  font-size: 2rem !important;
+  font-weight: 700;
+  color: #2d3748;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.teamCount {
+  background: #fa6300;
+  color: white;
+  padding: 0.25rem 0.75rem;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.searchWrapper {
+  position: relative;
+}
+
+.searchBox {
+  position: relative;
+  width: 280px;
+}
+
+.searchInput {
+  width: 100%;
+  padding: 0.75rem 1rem 0.75rem 2.5rem;
+  border-radius: 12px;
+  border: 1px solid #e2e8f0;
+  font-size: 0.95rem;
+  transition: all 0.3s ease;
+  background: #f8fafc;
+}
+
+.searchInput:focus {
+  outline: none;
+  border-color: #fa6300;
+  box-shadow: 0 0 0 3px rgba(250, 99, 0, 0.1);
+  background: white;
+}
+
+.searchIcon {
+  position: absolute;
+  left: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #94a3b8;
+  z-index: 2;
+}
+
+.tableOuterContainer {
+  position: relative;
+  background: white;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+}
+
+.tableBorder {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border: 2px solid;
+  border-image: linear-gradient(135deg, #fa6300 0%, #ff9a56 100%);
+  border-image-slice: 1;
+  border-radius: 16px;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.tableInnerContainer {
+  position: relative;
+  background: white;
+  border-radius: 14px;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.table {
+  width: 100%;
+  border-spacing: 0;
+}
+
+.tableHeader {
+  background: #ffebd8;
+}
+
+.tableHeader th {
+  padding: 1rem 1.25rem;
+  font-weight: 600;
+  color: #4a5568;
+  text-align: left;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.rankColumn {
+  width: 10%;
+}
+
+.teamColumn {
+  width: 30%;
+}
+
+.universityColumn {
+  width: 40%;
+}
+
+.coachColumn {
+  width: 30%;
+}
+
+.tableRow td {
+  padding: 1.25rem;
+  vertical-align: middle;
+  border-bottom: 1px solid #f6eac8;
+}
+
+.rankBadge {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.5rem 0.75rem;
+  border-radius: 12px;
+  font-weight: 600;
+  font-size: 0.9rem;
+  border: none;
+  transition: all 0.3s ease;
+}
+
+.defaultRank {
+  background: #f1f5f9;
+  color: #64748b;
+}
+
+.goldRank {
+  background: linear-gradient(135deg, #ffd700 0%, #ffc600 100%);
+  color: #8b6e00;
+  box-shadow: 0 4px 12px rgba(255, 215, 0, 0.2);
+}
+
+.silverRank {
+  background: linear-gradient(135deg, #e0e0e0 0%, #f0f0f0 100%);
+  color: #5a5a5a;
+  box-shadow: 0 4px 12px rgba(192, 192, 192, 0.2);
+}
+
+.bronzeRank {
+  background: linear-gradient(135deg, #cd7f32 0%, #d18f4e 100%);
+  color: white;
+  box-shadow: 0 4px 12px rgba(205, 127, 50, 0.2);
+}
+
+.teamContent {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.expandButton {
+  background: rgba(250, 99, 0, 0.1);
+  border: none;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: #fa6300;
+  transition: all 0.3s ease;
+}
+
+.expandButton:hover {
+  background: rgba(250, 99, 0, 0.2);
+}
+
+.teamName {
+  font-weight: 600;
+  color: #2d3748;
+}
+
+.universityContent {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.universityLogo {
+  width: 36px;
+  height: 36px;
+  border-radius: 8px;
+  overflow: hidden;
+  background: #f1f5f9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.universityLogo img {
+  width: 70%;
+  height: 70%;
+  object-fit: contain;
+}
+
+.coachContent {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.coachAvatar {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #fa6300 0%, #ff9a56 100%);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 0.95rem;
+  flex-shrink: 0;
+}
+
+.participantsRow {
+  background: rgba(250, 99, 0, 0.02);
+}
+
+.participantsContainer {
+  padding: 1.5rem 2rem;
+}
+
+.participantsHeader {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid rgba(250, 99, 0, 0.1);
+}
+
+.participantsHeader h5 {
+  margin: 0;
+  font-size: 1.1rem;
+  color: #fa6300;
+}
+
+.membersCount {
+  margin-left: 1rem;
+  background: rgba(250, 99, 0, 0.1);
+  color: #fa6300;
+  padding: 0.25rem 0.75rem;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.participantsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.25rem;
+}
+
+.participantCard {
+  background: white;
+  border-radius: 12px;
+  padding: 1.25rem;
+  display: flex;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  border: 1px solid rgba(0, 0, 0, 0.03);
+}
+
+.participantAvatar {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #fa6300 0%, #ff9a56 100%);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 1rem;
+  font-weight: bold;
+  font-size: 1.1rem;
+  flex-shrink: 0;
+}
+
+.participantInfo {
+  flex: 1;
+}
+
+.participantInfo h6 {
+  margin: 0 0 0.25rem 0;
+  font-size: 1rem;
+  color: #2d3748;
+  font-weight: 600;
+}
+
+.participantInfo p {
+  margin: 0 0 0.5rem 0;
+  font-size: 0.85rem;
+  color: #64748b;
+}
+
+.participantMeta {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.participantMeta span {
+  font-size: 0.75rem;
+  background: rgba(0, 0, 0, 0.05);
+  padding: 0.25rem 0.75rem;
+  border-radius: 20px;
+  color: #475569;
+}
+.PCPCQuestions {
+  margin-block: 50px;
+}
+
+.PCPCQuestions h2 {
+  text-align: center;
+}
+
+.PCPCQuestions img {
+  width: 100%;
+}
+
+.PCPCQuestions a {
+  text-decoration: none;
+  color: #F1F1F1 !important;
+}
+
+.PCPCQuestions button {
+  display: block;
+  width: 100%;
+  background-color: #F8A70F;
+  color: #F1F1F1 !important;
+  border: #F8A70F solid 1px;
+  border-radius: 5px;
+  padding: 10px;
+  margin-block: 20px;
+  font-weight: 700;
+  transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.PCPCQuestions button:hover {
+  background-color: #e69500;
+}
+
+.PCPCQuestions button svg {
+  width: 15px;
+  margin-right: 6px;
+}
+
+
+.sectionAdminControls {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 15px;
+  margin-block: 20px;
+}
+
+.addBtn {
+  background: #e69500;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.addBtn:hover {
+  background: #ffe0a7;
+}
+
+.addBtn:active {
+  background: #ffe0a7 !important;
+}
+
+.itemControls {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  display: flex;
+  gap: 5px;
+}
+
+.editBtn, .deleteBtn {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 5px;
+  border-radius: 4px;
+  transition: background 0.3s;
+}
+
+.editBtn {
+  background-color: transparent;
+  color: #f8a70f;
+  font-weight: 500;
+  transition: all 0.2s;
+}
+
+.updateDescription, .updateCompetition {
+  border: 1px solid #f8a70f !important;
+}
+
+
+.editBtn:hover,
+.editBtn:focus {
+  background-color: rgba(248, 167, 15, 0.1);
+  transform: translateY(-1px);
+}
+
+.editBtn:active {
+  background-color: rgba(248, 167, 15, 0.2) !important;
+}
+
+.deleteBtn {
+  color: #F44336;
+}
+
+.deleteBtn:hover, .deleteBtn:active {
+  background: rgba(244, 67, 54, 0.1) !important;
+}
+
+
+
+.addParticipantBtn {
+  background: #e69500;
+  height: 30px;
+  margin-right: 0px;
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding: 5px 10px;
+  border-radius: 3px;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  gap: 3px;
+  transition: background 0.3s;
+}
+
+.addParticipantBtn:hover {
+  background: #ffe0a7;
+}
+
+.addParticipantBtn:active {
+  background: #ffe0a7 !important;
+}
+
+.modalContent {
+  padding: 20px;
+}
+
+.modalContent h2 {
+  margin-top: 0;
+  color: #333;
+}
+
+.editForm {
+  margin: 20px 0;
+}
+
+.formGroup {
+  margin-bottom: 15px;
+}
+
+.editInput {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.modalActions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.descriptionBtn {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+.descriptionBtn:hover, .descriptionBtn:active {
+  background: none !important;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+.searchButton {
+  background-color: #fa6300;
+  border: none;
+  border-radius: 0 4px 4px 0;
+  padding: 8px 15px;
+  color: white;
+  transition: all 0.3s;
+}
+
+.searchButton:hover {
+  background-color: #e05500;
+}
+
+.searchButton svg{
+ width: 15px;
+}
+
+.searchBox {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.searchInput {
+  flex: 1;
+  border: none;
+  padding: 8px 15px;
+  outline: none;
+}
+
+.searchIcon {
+  margin-left: 10px;
+  color: #777;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

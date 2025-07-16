@@ -1,0 +1,137 @@
+.body {
+    height: fit-content;
+    background-image: url('../../../../images/background/backgroundArchive.png');
+}
+
+.search {
+    margin-top: 100px !important;
+    margin-bottom: 50px !important;
+    width: 60%;
+    margin: auto;
+}
+
+.searchinput {
+    border: 1px solid #F8A70F;
+    background-color: #F5F5F5;
+}
+
+
+.searchbtn {
+    color: #fffafa;
+    ;
+    background-color: #F8A70F;
+    border: 1px solid #F8A70F;
+    padding-inline: 15px;
+    border-radius: 5px;
+}
+
+.activeBtn {
+    background-color: #efcf94 !important;
+    color: white;
+    font-weight: bold;
+    border: 2px solid #efcf94 !important;
+}
+
+.sectionSubAdminControls {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 25px;
+}
+
+.sectionSubAdminControlsComp {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 15px;
+    margin-block: 20px;
+}
+
+.cards a:link,
+.cards a:visited,
+.cards a:hover,
+.cards a:active {
+    text-decoration: none;
+    color: inherit;
+}
+
+.addBtn {
+    background: #e69500;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: 25px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.addBtn:hover {
+    background: #ffe0a7;
+}
+
+.addBtn:active {
+    background: #ffe0a7 !important;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card h5 {
+    text-decoration: none;
+    text-align: center;
+}
+
+.card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+
+
+.editBtn,
+.deleteBtn {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 4px;
+    transition: background 0.3s;
+}
+
+.editBtn {
+    background-color: transparent;
+    color: #f8a70f;
+    font-weight: 500;
+    transition: all 0.2s;
+}
+
+.editBtn:hover,
+.editBtn:focus {
+    background-color: rgba(248, 167, 15, 0.1);
+    transform: translateY(-1px);
+}
+
+.editBtn:active {
+    background-color: rgba(248, 167, 15, 0.2) !important;
+}
+
+.deleteBtn {
+    color: #F44336;
+}
+
+.deleteBtn:hover,
+.deleteBtn:active {
+    background: rgba(244, 67, 54, 0.1) !important;
+}
+
+h2.noResults {
+    font-size: 20px;
+    color: rgb(56, 54, 54);
+}

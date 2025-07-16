@@ -1,0 +1,59 @@
+.sliderPh {
+  width: 90%;
+  max-width: 1000px;
+  margin: 50px auto;
+
+  padding: 2rem;
+  border-radius: 10px;
+/*  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);*/
+  text-align: center;
+}
+
+.image-container-slider {
+  width: 100%;
+  height: 500px; /* ثابت لحجم موحّد */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.slider-image-slider {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain; /* يحافظ على جودة الصورة */
+  border-radius: 10px;
+}
+
+
+/* Slick dots styling */
+.sliderPh .slick-dots li button:before {
+  font-size: 0.8rem;
+  color: #f8a70f;
+}
+
+.sliderPh .slick-dots li.slick-active button:before {
+  color: #f8a70f;
+}
+
+/* Slick arrows */
+.sliderPh .slick-prev,
+.sliderPh .slick-next {
+  width: 40px;
+  height: 40px;
+  z-index: 1;
+}
+
+.sliderPh .slick-prev:before,
+.sliderPh .slick-next:before {
+  font-size: 30px;
+  color: #333;
+  opacity: 1;
+}
+
+@media (max-width: 768px) {
+  .image-container-slider {
+    height: 250px;
+  }
+}

@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Waterfall&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poltawski+Nowy:ital,wght@0,400..700;1,400..700&display=swap');
+
+.hero {
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(rgba(246, 239, 217, 0.7), rgba(246, 239, 217, 0.7));
+  background-size: cover;
+  background-position: center;
+  color: #333;
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+  animation: fadeInHero 1s ease-out;
+  padding: 20px; /* إضافة Padding لتجنب التصاق النصوص */
+  box-sizing: border-box;
+}
+
+.hero-text {
+  max-width: 700px;
+  margin-top: 15vh;
+  margin-right: 5vw;
+  animation: slideIn 1.2s ease-out;
+}
+
+.countdown {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 10px;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-right: 0;
+}
+
+.count {
+  width: 70px;
+  min-width: 60px;
+  border-radius: 10px;
+  height: 70px;
+ /* background-color: #F8A70F;*/
+   background-image: linear-gradient(315deg, rgba(245, 225, 158, 0.87) 20%, rgba(248, 167, 15, 0.74) 55%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+  font-family: "Poltawski Nowy", serif;
+  color: #000;
+  animation: pulse 1.5s infinite;
+  font-size: 0.9rem;
+  margin-bottom: 6px;
+}
+
+.hero-text h1 {
+  font-family: "Playfair Display", serif;
+  font-size: 4vw; /* حجم نسبي */
+  font-weight: 600;
+  margin-bottom: 0.3em;
+}
+
+.hero-text p {
+  margin: 10px 0 20px 0;
+  line-height: 1.4;
+  opacity: 0;
+  animation: fadeInText 1s ease-out 0.5s forwards;
+  font-size: 1.1rem;
+  max-width: 100%;
+  word-wrap: break-word;
+}
+
+.video-icon-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin-top: 20px;
+  text-align: center;
+}
+
+.video-icon {
+  font-size: 4vw;
+  color: black;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.video-icon:hover {
+  color: #e69500;
+}
+
+.video-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  animation: fadeIn 0.5s ease-in-out;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.video-container {
+  position: relative;
+  background: #333;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  max-width: 900px;
+  max-height: 80vh;
+  overflow: hidden;
+  animation: zoomIn 0.6s ease-in-out forwards;
+}
+
+.video-container iframe {
+  width: 100%;
+  height: 100%;
+  min-height: 300px;
+  aspect-ratio: 16 / 9;
+  border-radius: 8px;
+}
+
+.close {
+  position: absolute;
+  top: -5px;
+  right: 5px;
+  font-size: 40px;
+  cursor: pointer;
+  color: white;
+  font-weight: bold;
+  transition: color 0.3s;
+  z-index: 10;
+}
+
+.close:hover {
+  color: red;
+}
+
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.95);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes zoomIn {
+  from {
+    transform: scale(0.8);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+/* ======= Media Queries ======= */
+
+@media (max-width: 900px) {
+  .hero-text {
+    max-width: 90vw;
+    margin-top: 10vh;
+    margin-right: 5vw;
+  }
+
+  .hero-text h1 {
+    font-size: 6vw;
+  }
+
+  .hero-text p {
+    font-size: 1rem;
+  }
+
+  .count {
+    width: 60px;
+    height: 60px;
+    font-size: 0.8rem;
+  }
+
+  .video-icon {
+    font-size: 8vw;
+  }
+}
+
+@media (max-width: 600px) {
+  .hero-text {
+    max-width: 95vw;
+    margin-top: 8vh;
+    margin-right: 3vw;
+  }
+
+  .hero-text h1 {
+    font-size: 7vw;
+  }
+
+  .hero-text p {
+    font-size: 0.9rem;
+  }
+
+  .countdown {
+    gap: 6px;
+  }
+
+  .count {
+    width: 50px;
+    height: 50px;
+    font-size: 0.75rem;
+  }
+
+  .video-icon {
+    font-size: 10vw;
+  }
+}
+
+@media (max-width: 400px) {
+  .hero-text h1 {
+    font-size: 8vw;
+  }
+
+  .count {
+    width: 45px;
+    height: 45px;
+    font-size: 0.7rem;
+  }
+
+  .video-icon {
+    font-size: 12vw;
+  }
+}
+
+/* عندما ينتهي العد التنازلي، نوسّط الأيقونة لوحدها */
+.center-alone {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

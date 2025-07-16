@@ -1,0 +1,125 @@
+.containerAdd {
+    max-width: 85%;
+    margin-left: 20px;
+    margin-top: 20px;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .form-label-add {
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .form-control-add {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+  }
+  
+  .text-center-add {
+    text-align: center;
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .error {
+    color: red;
+    font-size: 12px;
+    margin-top: -10px;
+    margin-bottom: 10px;
+  }
+  
+  .adv-img-upload {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: #f0f0f0; /* خلفية خفيفة */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .adv-img-upload img {
+    width: 70px; /* تصغير الصورة */
+    height: 70px;
+   
+    object-fit: cover;
+  }
+  
+  
+  .adv-img-upload:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  }
+  
+  .adv-img-upload:active {
+    transform: scale(0.95);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  .d-flex-add {
+    display: flex;
+    align-items: center;
+  }
+  
+  .me-3-add {
+    margin-right: 16px;
+  }
+  
+  .mb-4-add {
+    margin-bottom: 16px;
+  }
+  
+  .row-add {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .col-md-6-add {
+    flex: 0 0 50%;
+    max-width: 50%;
+    padding: 10px;
+  }
+  
+  .col-6-add {
+    flex: 0 0 100%;
+    max-width: 100%;
+    padding: 10px;
+  }
+  
+  @media (max-width: 768px) {
+    .col-md-6-add, .col-6-add {
+      flex: 0 0 100%;
+      max-width: 100%;
+    }
+  }
+  
+  .btnAddDashBoard {
+    padding: 12px 24px;
+    margin-top: 20px;
+    border: none;
+    cursor: pointer;
+    color: #f8800f;
+    border-radius: 50px;
+    background-color: #F6EFD9;
+    width: 40%;
+  }
+  
+  .btnAddDashBoard:hover {
+    transform: scale(1.1);
+    color: #fff;
+    background-color: #f8a74f;
+    box-shadow: 0 8px 16px #f8800f;
+  }
+  
+  .btnAddDashBoard:active {
+    transform: scale(0.95);
+  }  

@@ -1,0 +1,139 @@
+
+.containerAdd {
+    max-width:85%;
+margin-left: 20px;
+  margin-top: 20px;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .form-label {
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .form-control-add {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+  }
+
+ 
+  
+  .text-center-add {
+    text-align: center; font-size: 28px;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .mb-4-add, .mb-3-add, .mb-2-add, .mb-0-add, .my-5-add {
+    margin-bottom: 16px;
+  }
+  
+  .d-flex-add {
+    display: flex;
+    align-items: center;
+  }
+  
+  .me-3-add {
+    margin-right: 16px;
+  }
+  
+  .row-add {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .col-md-6-add {
+    flex: 0 0 50%;
+    max-width: 50%;
+    padding: 10px;
+  }
+  
+  .col-6-add {
+    flex: 0 0 100%;
+    max-width: 100%;
+    padding: 10px;
+  }
+  
+  @media (max-width: 768px) {
+    .col-md-6-add, .col-6-add {
+      flex: 0 0 100%;
+      max-width: 100%;
+    }
+  }
+  .error {
+    color: red;
+    font-size: 12px;
+    margin-top: -10px;
+    margin-bottom: 10px;
+  }
+  
+ 
+  /* تحسين مظهر الحقول عند التركيز */
+.form-control-add:focus {
+    outline: none;
+    border-color: #f8800f;
+    box-shadow: 0 0 8px #f8800f;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* تأثير رائع عند التمرير فوق الصورة */
+.adv-img-upload {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.adv-img-upload:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+/* تأثير عند النقر على الصورة */
+.adv-img-upload:active {
+    transform: scale(0.95);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* تحسين ظهور رسالة الخطأ */
+.error {
+    color: red;
+    font-size: 12px;
+    margin-top: -8px;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+/* تحسين أزرار الإرسال */
+.btnAddDashBoard {
+    padding: 12px 24px;
+    margin-top: 20px;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.3s ease, color 0.3s ease, background-color 0.3s ease;
+    color: #f8800f;
+    border-radius: 50px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: #F6EFD9;
+    width: 40%;
+}
+
+.btnAddDashBoard:hover {
+    transform: scale(1.1);
+    color: #fff;
+    background-color: #f8a74f;
+    box-shadow: 0 8px 16px #f8800f;
+}
+
+.btnAddDashBoard:active {
+    transform: scale(0.95);
+    background-color: #e67e22;
+}

@@ -1,0 +1,225 @@
+@import url("https://fonts.googleapis.com/css2?family=Delicious+Handrawn&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Gochi+Hand&display=swap");
+.contact-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(315deg, #f9f4d8, #f9b14c, #fff5d9);
+  padding: 50px;
+  margin-top: 120px;
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+.cont {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  width: 88%;
+  margin: auto;
+}
+
+/* ==== FORM STYLES ==== */
+.form-wrapper {
+  width: 50%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.form-title {
+  font-size: 2rem;
+  font-family: "Playfair Display", serif;
+  /* font-family: 'Gochi Hand', cursive;*/
+  color: #f8a70f;
+  margin-bottom: 1rem;
+}
+
+.form-subtext {
+  color: #333;
+  margin-bottom: 1rem;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  font-family: "Playfair Display", serif;
+}
+
+.form-main {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.form-main .form-label {
+  font-family: "Playfair Display", serif;
+  font-size: 20px;
+}
+
+.form-input,
+.form-textarea {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-bottom: 1px solid #333;
+  background: transparent;
+  font-family: "Delicious Handrawn", sans-serif;
+  outline: none;
+}
+
+.form-textarea {
+  resize: none;
+}
+
+.form-input::placeholder,
+.form-textarea::placeholder {
+  color: #000;
+}
+
+.form-submit {
+  background-color: #3b3636;
+  color: white;
+  padding: 10px;
+  border-radius: 35px;
+  outline: 0;
+  border: 0;
+  cursor: pointer;
+  font-family: "Playfair Display", serif;
+  width: 10rem;
+  transition: opacity 0.3s ease;
+}
+
+.form-submit:hover {
+  opacity: 0.8;
+}
+
+.error-msg {
+  color: red;
+  font-size: 0.75rem;
+  font-family: "Jost", sans-serif;
+}
+
+/* ==== IMAGE STYLES ==== */
+.image-container {
+  width: 40%;
+}
+
+.contact-image {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* ==== TOGGLE SWITCH ==== */
+.theme-switch-wrapper {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.theme-switch {
+  position: relative;
+  width: 60px;
+  height: 34px;
+}
+
+.theme-switch input {
+  display: none;
+}
+
+.slider {
+  background-color: #ccc;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 34px;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.slider:before {
+  content: "";
+  position: absolute;
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  border-radius: 50%;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: #3b3636;
+}
+
+input:checked + .slider:before {
+  transform: translateX(26px);
+}
+
+.darkmode-label {
+  margin-left: 12px;
+  font-size: 0.8rem;
+  font-family: "Jost", sans-serif;
+  color: #3b3636;
+}
+
+/* ==== RESPONSIVE ==== */
+@media (max-width: 790px) {
+  .form-wrapper {
+    width: 100%;
+  }
+  .image-container {
+    width: 100%;
+    margin-top: 30px;
+  }
+}
+
+@media (max-width: 700px) {
+  .contact-container {
+    flex-direction: column;
+    padding: 30px;
+  }
+  .image-container {
+    display: none;
+  }
+}
+
+.btnnContactt {
+  /*background-color: rgba(245, 245, 245, 0.915);*/
+  background-image: linear-gradient(
+    315deg,
+    rgba(245, 225, 158, 0.87) 20%,
+    rgba(248, 167, 15, 0.74) 55%
+  );
+  margin-top: 20px;
+  color: black;
+  padding: 10px;
+  border-radius: 35px;
+  outline: 0;
+  border: 0;
+  cursor: pointer;
+  font-family: "Playfair Display", serif;
+}
+
+.btnnContact:disabled {
+  background-color: #fff5e1;
+  cursor: not-allowed;
+  position: relative;
+}
+
+.btnnContact:disabled:hover::after {
+  content: "Please login to send a message";
+  position: absolute;
+  top: -35px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #444;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 8px;
+  font-size: 12px;
+  white-space: nowrap;
+  z-index: 10;
+  opacity: 1;
+}

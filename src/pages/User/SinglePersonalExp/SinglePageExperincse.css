@@ -1,0 +1,150 @@
+.refined-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  width: 80%;
+  margin: auto;
+  padding: 30px 0;
+}
+
+.refined-slider {
+  width: 100%;
+}
+
+.refined-slide {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.refined-uni-img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 3px solid transparent;
+}
+
+.refined-uni-img:hover {
+  transform: scale(1.1);
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
+}
+
+.refined-uni-img.selected {
+  border-color: #f8a70f;
+}
+
+.refined-uni-name {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+  text-align: center;
+}
+
+/* Swiper buttons */
+.swiper-button-next,
+.swiper-button-prev {
+  background-color: #f8a70f;
+  border-radius: 50%;
+  padding: 10px;
+  color: #fff;
+  opacity: 0.7;
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+  opacity: 1;
+}
+
+/* Experiences */
+.refined-experiences-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  gap: 25px;
+}
+
+.refined-card {
+  background-image: linear-gradient(180deg, rgba(246, 239, 217, 0.7) 22%, rgba(248, 167, 15, 0.7) 53%);
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  transition: all 0.3s ease;
+  overflow: hidden;
+  height: 250px; /* طول موحد لجميع البطاقات */
+}
+.refined-card {
+  max-width: 450px; /* ✅ يمنع التمدد الكامل للعرض */
+  margin: 0 auto;   /* ✅ يوسّط البطاقة لو كانت وحدة */
+}
+
+
+.refined-card.expanded {
+  height: auto; /* البطاقة المفتوحة فقط تتمدد تلقائيًا */
+}
+
+
+.refined-user-info {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 10px;
+}
+
+.refined-user-avatar {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #f8a70f;
+}
+
+/* حاوية النص */
+.refined-text-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  flex-grow: 1;
+}
+
+.refined-text {
+  font-size: 15px;
+  color: #444;
+  line-height: 1.5;
+  display: -webkit-box;
+  -webkit-line-clamp: 5; /* يسمح بالتحكم بعدد الأسطر التي تظهر */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  position: relative;
+  max-height: 120px; /* تحديد أقصى ارتفاع عند عدم التوسيع */
+}
+
+.refined-text.expanded {
+  -webkit-line-clamp: unset; /* إلغاء تحديد الأسطر عند التوسيع */
+  max-height: none; /* السماح للنص بأن يظهر بشكل كامل */
+  overflow: visible;
+}
+
+/* زر "Read More" */
+.refined-read-toggle {
+  display: inline-block;
+  margin-top: 10px;
+  color: black;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.refined-read-toggle:hover {
+  color: #c67000;
+}
+
+.refined-no-data {
+  text-align: center;
+  margin-top: 20px;
+  font-style: italic;
+}

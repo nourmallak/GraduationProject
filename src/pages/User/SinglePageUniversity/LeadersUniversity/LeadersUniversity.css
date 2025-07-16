@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+.leaders-container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 2rem 1rem;
+    background-color: #F6EFD9;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    margin-bottom: 4rem;
+    margin-top: 4rem;
+}
+
+.leaders-line {
+    color: #333;
+    margin-top: 2rem;
+}
+
+.leaders-title {
+    margin-top: 20px;
+    text-align: center;
+    margin-bottom: 1.5rem;
+    font-size: 3rem;
+    font-weight: bold;
+    font-family:  "Playfair Display", serif;
+}
+
+.leaders-container .slick-dots li button:before {
+    font-size: 0.8rem;
+    color: #f8a70f;
+}
+
+.leaders-container .slick-dots li.slick-active button:before {
+    color: #f8a70f;
+}
+
+/* Leader Card Styles */
+.leaders-container .leader-card {
+    padding: 1.5rem;
+    border-radius: 10px;
+}
+
+.leaders-container .leader-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Avatar Section */
+.leaders-container .avatar-container {
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: center;
+}
+
+.leaders-container .active-avatar {
+    border: 2px solid #f8a70f;
+    transition: border-color 0.2s ease-in-out;
+    background: white !important;
+}
+
+.leaders-container .active-avatar:hover {
+    border-color: #f8a70f;
+}
+
+/* Info Section */
+.leaders-container .info-section h3 {
+    font-size: 1.2rem;
+    color: #f8a70f;
+    margin: 0.5rem 0 0.3rem;
+    font-weight: 500;
+}
+
+.leaders-container .profession {
+    font-size: 0.9rem;
+    color: #757575;
+    margin-bottom: 0.5rem;
+}
+.leaders-container .leader-info{
+    display: flex;
+    align-items: center;
+    gap:15px;
+    margin-bottom: 25px;
+}
+
+/* Leader Text */
+.leaders-container .leader-text {
+    margin-top: 1rem;
+    font-size: 1rem;
+    color: #424242;
+    position: relative;
+}
+
+.leaders-container .speech-bubble {
+    display: inline-block;
+    position: relative;
+    background: #F6EFD9;
+    border-radius: 10px;
+    padding: 1rem;
+    max-width: 100%;
+    font-style: italic;
+}
+
+.leaders-container .speech-bubble .quote {
+    color: #f8a70f;
+    font-size: 1.5rem;
+    line-height: 0.5rem;
+}
+
+.leaders-container .speech-bubble .under {
+    display: inline-block;
+    transform: rotate(180deg);
+    margin-left: 0.3rem;
+}
+
+/* View More Button */
+.leaders-container .view-more-container {
+    margin-top: 2rem;
+}
+
+.leaders-container .view-more-btn {
+    display: inline-block;
+    padding: 0.7rem 1.5rem;
+    background-color: #f8a70f;
+    color: white;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: background-color 0.2s ease-in-out;
+    margin-top: 1rem;
+}
+
+.leaders-container .view-more-btn:hover {
+    background-color: #f8a70f;
+}
+
+.leaders-container .slick-prev,
+.leaders-container .slick-next {
+    width: 40px;
+    height: 40px;
+    color: white;
+    border-radius: 50%;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.leaders-container .slick-prev:before,
+.leaders-container .slick-next:before {
+    font-size: 30px;
+    color: #333;
+    opacity: 1;
+}
+
+.leaders-container .slick-prev {
+    left: 30px;
+}
+
+.leaders-container .slick-next {
+    right: 30px;
+}
+.leaders-container .leader-social{
+    display: flex;
+    align-items: center;
+    gap:15px;
+}
+.leaders-container .leader-social a{
+    color: #333;
+    cursor: pointer;
+}
+.leaders-container .leader-social a:hover{
+    color: #f8a70f;
+    
+}
+
+@media (max-width: 768px) {
+    .leaders-container {
+        padding: 1rem;
+        gap: 1rem;
+    }
+
+    .leaders-title {
+        font-size: 2.5rem;
+        margin-bottom: 1rem;
+    }
+
+    .leaders-container .slick-prev {
+        left: 0;
+    }
+    
+    .leaders-container .slick-next {
+        right: 0;
+    }
+}
+
+/* Additional Media Query for Mobile (Max Width 480px) */
+@media (max-width: 480px) {
+    .leaders-container {
+        padding: 0.5rem;
+    }
+
+    .leaders-title {
+        font-size: 2rem;
+    }
+
+    .leaders-container .info-section {
+        border-left: none;
+        padding: 5px;
+        text-align: center;
+    }
+
+    .leaders-container .view-more-btn {
+        padding: 0.5rem 1rem;
+        font-size: 0.9rem;
+    }
+
+    .leaders-container .slick-prev {
+        left: 0;
+    }
+    
+    .leaders-container .slick-next {
+        right: 0;
+    }
+}
+
+.leader-row {
+    display: flex;
+    width: 200px;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    align-items: start;
+}
+
+.combined-info {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+.leader-name {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #f8a70f;
+    margin: 0;
+}

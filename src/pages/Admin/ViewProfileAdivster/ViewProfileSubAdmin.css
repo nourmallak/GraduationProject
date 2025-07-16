@@ -1,0 +1,200 @@
+/* ========== عام ========== */
+.profile-container,
+.user-info-card {
+  padding: 1.25rem;
+  border-radius: 1rem;
+  background-color: #ffffff;
+  border: 1px solid #e5e7eb;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.profile-container.dark,
+.user-info-card.dark {
+  background-color: #1f2937;
+  border-color: #374151;
+}
+
+/* ========== Header ========== */
+.profile-header,
+.user-info-card .header {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.profile-header.xl {
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* ========== Info Section ========== */
+.profile-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.profile-info.xl {
+  flex-direction: row;
+  align-items: center;
+}
+
+/* ========== صورة الملف الشخصي ========== */
+.profile-image {
+  width: 5rem;
+  height: 5rem;
+  overflow: hidden;
+  border-radius: 50%;
+  border: 2px solid #e5e7eb;
+}
+
+.profile-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.profile-image.dark {
+  border-color: #374151;
+}
+
+/* ========== الاسم والنصوص ========== */
+.profile-name {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #1f2937;
+  text-align: center;
+}
+
+.profile-name.dark {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.profile-text {
+  text-align: center;
+  font-size: 0.875rem;
+  color: #6b7280;
+}
+
+.profile-text.dark {
+  color: #9ca3af;
+}
+
+/* ========== فاصل الوضع الوظيفي ========== */
+.profile-divider {
+  display: none;
+  height: 1rem;
+  width: 1px;
+  background-color: #d1d5db;
+}
+
+.profile-divider.xl,
+.profile-position .profile-divider {
+  display: block;
+}
+
+.profile-position {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+/* ========== الروابط (الايقونات) ========== */
+.profile-links {
+  display: flex;
+  flex-direction: row;
+  gap: 1.35rem;
+  align-items: flex-end;
+  margin-right: 2rem;
+  margin-top: 1rem;
+}
+
+.profile-links .profile-link,
+.profile-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 3.5rem;
+  height: 3.5rem;
+  background-color: #fff;
+  border: 2px solid #e5e7eb;
+  border-radius: 50%;
+  color: #4b5563;
+  font-size: 1.25rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+}
+
+.profile-link:hover {
+  background-color: #f3f4f6;
+  color: #1f2937;
+  transform: translateY(-3px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.profile-link.dark {
+  background-color: #1f2937;
+  border-color: #374151;
+  color: #9ca3af;
+}
+
+.profile-link.dark:hover {
+  background-color: #374151;
+  color: #e5e7eb;
+  transform: translateY(-3px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.profile-link .icon-view-adivster {
+  font-size: 22px;
+}
+
+/* ========== User Info Card ========== */
+.user-info-card {
+  margin-top: 30px;
+}
+
+.user-info-card .header .title {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: #1f2937;
+  margin-bottom: 1.5rem;
+}
+
+.user-info-card .header .personal-info {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.25rem;
+}
+
+.user-info-card .header .personal-info p {
+  font-size: 0.875rem;
+  color: #6b7280;
+}
+
+.user-info-card .header .personal-info .text {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #1f2937;
+ 
+}
+
+
+
+
+
+
+/* ========== Responsive Design ========== */
+@media (min-width: 768px) {
+  .profile-info.xl {
+    gap: 2rem;
+  }
+
+  .profile-links {
+    margin-right: 4rem;
+    text-align: right;
+  }
+}

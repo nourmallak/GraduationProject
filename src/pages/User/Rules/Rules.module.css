@@ -1,0 +1,145 @@
+.pageWrapper {
+  background: linear-gradient(to bottom right, #fffaf3, #fefaf5);
+  min-height: 100vh;
+  padding: 4rem 1rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.pageTitle {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #6b4d00;
+  text-align: center;
+  margin-bottom: 3rem;
+  position: relative;
+}
+
+.pageTitle::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 4px;
+  background-color: #f8a70f;
+  margin: 0.5rem auto 0;
+  border-radius: 2px;
+}
+
+.addButtonContainer {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 2.5rem;
+}
+
+.primaryButton {
+  background-color: #f8a70f;
+  border: none;
+  color: white;
+  font-weight: 600;
+  padding: 0.6rem 1.8rem;
+  border-radius: 10px;
+  font-size: 1rem;
+  transition: 0.3s ease-in-out;
+}
+
+.primaryButton:hover {
+  background-color: #e0970d;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 18px rgba(248, 167, 15, 0.35);
+}
+
+.rulesList {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.ruleItem {
+  background: transparent;
+  padding: 1.2rem 1rem;
+  border-bottom: 1px solid #f1e2c5;
+}
+
+.ruleRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.75rem;
+}
+
+.ruleTitle {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #5a3e00;
+  margin: 0;
+}
+
+.actions {
+  display: flex;
+  gap: 0.4rem;
+}
+
+.iconButton,
+.iconButtonDelete {
+  border-radius: 8px;
+  font-size: 0.9rem;
+  padding: 0.4rem 0.6rem;
+  transition: 0.2s ease-in-out;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.iconButton {
+  background-color: #fff9f0 !important;
+  color: #f8a70f !important;
+  border: 1px solid #f8a70f !important;
+}
+
+.iconButton:hover {
+  background-color: #fef1d6 !important;
+}
+
+.iconButtonDelete {
+  background-color: #fff9f0 !important;
+  color: #d9534f !important;
+  border: 1px solid #d9534f !important;
+}
+
+.iconButtonDelete:hover {
+  background-color: #ffe6e6 !important;
+}
+
+.descriptionList {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  padding-left: 1rem;
+}
+
+.descriptionItem {
+  display: flex;
+  gap: 0.5rem;
+  align-items: flex-start;
+  color: #6f4f1c;
+  font-size: 1.05rem;
+}
+
+.bullet {
+  color: #f8a70f;
+  font-weight: bold;
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+
+.text {
+  flex: 1;
+}
+
+.noResults {
+  color: #a88b62;
+  font-weight: 500;
+  text-align: center;
+  margin-top: 3rem;
+  font-size: 1.2rem;
+}

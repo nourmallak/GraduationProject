@@ -1,0 +1,91 @@
+.headerDashBoard {
+  background: #f8800f;
+  color: #fff;
+  padding: 16px;
+  font-size: 24px;
+  width: 100%;
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  transition: margin-left 0.5s;
+}
+
+
+
+.logoTopDashBoard {
+  width: 40px;
+}
+
+.iconsContainer-header {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  margin-right: 50px;
+}
+
+.icon-header {
+  font-size: 24px;
+  cursor: pointer;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.icon-header:hover {
+  transform: scale(1.2);
+  color: #000;
+}
+
+.icon-header:active {
+  transform: scale(0.9);
+}
+
+/* الوضع الداكن */
+.dark .headerDashBoard {
+  background-color: #333;
+  color: #fff;
+}
+
+.dark .icon-header {
+  color: #ddd;
+}
+
+.dark .icon-header:hover {
+  color: #fff;
+}
+
+.headerDashBoard-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+   background-color: #f19d00;
+}
+
+.logoContainer-nav {
+  display: flex;
+  align-items: center;
+}
+
+.logoTopDashBoard-nav {
+  height: 50px;
+  object-fit: contain;
+}
+
+.iconsContainer-nav {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-right: 50px;
+}
+
+.icon-nav {
+  font-size: 24px;
+  color: white;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.icon-nav:hover {
+  color: black;
+}

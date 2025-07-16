@@ -1,0 +1,126 @@
+
+  .save-btn-university {
+    padding: 12px 28px;
+    background-color: #f8a70f;
+    color: white;
+    font-weight: 600;
+    font-size: 15px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .save-btn-university:hover {
+    background-color: #f8a60fd2;
+  }
+  .update-container-university {
+    padding: 40px;
+    
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+
+  }
+  
+  .update-wrapper-university {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+    width: 80%;
+    
+  }
+  
+  .update-title-university {
+    text-align: center;
+    font-size: 26px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    color: #1f2937;
+    font-family: var(--fontHeader);
+  }
+  
+  .update-form-university{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+  
+  @media (max-width: 768px) {
+    .update-form-university {
+      grid-template-columns: 1fr;
+    }
+  }
+  
+  .form-group-university {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 16px;
+  }
+  
+  .form-group-university label {
+    margin-bottom: 6px;
+    font-weight: 600;
+    color: #374151;
+  }
+  
+  .form-group-university input[type="text"],
+  .form-group-university input[type="file"] {
+    padding: 10px 12px;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    font-size: 14px;
+    background-color: #fff;
+  }
+  
+  .form-group-university input:focus {
+    border-color: #f8a70f;
+    outline: none;
+  }
+  
+  .logo-preview {
+    margin-top: 8px;
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+  }
+  
+  .update-actions-university {
+    margin-top: 30px;
+    text-align: center;
+  }
+  
+
+  .logo-card {
+    background-color: #f9fafb;
+    padding: 16px;
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  }
+  
+  .logo-card h4 {
+    margin-bottom: 12px;
+    font-size: 16px;
+    color: #374151;
+    font-weight: 600;
+  }
+  
+  .logo-card img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    border-radius: 8px;
+    background-color: #fff;
+    border: 1px solid #d1d5db;
+    padding: 8px;
+  }
+      

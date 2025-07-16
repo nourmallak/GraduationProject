@@ -1,0 +1,80 @@
+
+  
+  .hero-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .form-group {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-group label {
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #34495e;
+  }
+  
+  .form-group input[type="file"],
+  .form-group input[type="url"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    transition: border-color 0.3s;
+  }
+  
+  .form-group input:focus {
+    border-color: #f8a74f;
+    outline: none;
+  }
+  
+  .submit-btn {
+    padding: 12px;
+    background-color: #f8a74f;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .submit-btn:hover {
+    background-color: #f8c34fcb;
+  }
+  .edit-hero-form {
+    max-width: 900px;
+    margin-left: 60px;
+    padding: 30px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  .edit-hero-form form div {
+    margin-bottom: 15px;
+  }
+  .edit-hero-form label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  .edit-hero-form input {
+    width: 100%;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  .edit-hero-form button {
+    padding: 10px 20px;
+    background: #f8a74f;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  .edit-hero-form button:hover {
+    background: #f89e4fbc;
+  }
+  

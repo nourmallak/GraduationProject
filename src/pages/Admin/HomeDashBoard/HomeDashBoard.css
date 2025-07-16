@@ -1,0 +1,51 @@
+/* تنسيق الحاوية الرئيسية */
+.dashboard-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    height: 150vh;
+    padding: 20px;
+  }
+  
+  /* تنسيق مربع الترحيب */
+  .welcome-box {
+    display: flex;
+    align-items: center;
+    background-color: #f7efdc;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 700px; /* زيادة العرض لتكون أكبر */
+    margin-top: 20px; /* المسافة من الأعلى */
+  }
+  
+  /* تنسيق الأيقونة */
+  .welcome-icon {
+    width: 160px; /* تكبير الأيقونة */
+    height: 160px;
+    margin-right: 40px;
+  }
+  
+  /* تنسيق الرسالة الترحيبية */
+  .welcome-message {
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .welcome-message h3 {
+    font-size: 30px;
+    color: #333;
+    margin: 0;
+  }
+  
+  .welcome-message p {
+    font-size: 16px;
+    color: #f8800f;
+    margin-top: 5px;
+  }
+  
+  /* تنسيق باقي محتوى الصفحة مثل الـ InformationHomePage */
+  .information-container {
+    margin-top: 40px;
+  }
+  

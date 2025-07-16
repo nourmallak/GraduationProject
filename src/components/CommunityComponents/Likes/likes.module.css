@@ -1,0 +1,103 @@
+.likesContainer {
+    background-color: #fcf6ed;
+    border-radius: 12px;
+    border: 1px solid #fcf6ed;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.likesspadding {
+    padding: 10px;
+}
+
+.likesList {
+    margin-bottom: 20px;
+    max-height: 500px;
+    overflow-y: auto;
+    padding-right: 10px;
+}
+
+.likesList::-webkit-scrollbar {
+    width: 6px;
+}
+
+.likessList::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 10px;
+}
+
+.likesList::-webkit-scrollbar-thumb {
+    background: #F8A70F;
+    border-radius: 10px;
+}
+
+.like {
+    background: #ffffff;
+    padding: 7px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+}
+
+.like:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.likeHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+.LikeFooter {
+  margin-top: 15px;
+  padding-top: 10px;
+  border-top: 1px solid #eee;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.userInfo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.userImage {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #F8A70F;
+}
+
+.userName {
+    font-weight: 600;
+    color: #333;
+    font-size: 0.95rem;
+}
+
+.likeContent {
+    color: #555;
+    line-height: 1.6;
+    font-size: 0.9rem;
+    padding-left: 52px; 
+}
+
+.noLikes {
+    text-align: center;
+    color: #888;
+    padding: 20px;
+    font-style: italic;
+}
+
+.likeHeader a:link,
+.likeHeader a:visited,
+.likeHeader a:hover,
+.likeHeader a:active {
+    text-decoration: none;
+    color: inherit;
+}

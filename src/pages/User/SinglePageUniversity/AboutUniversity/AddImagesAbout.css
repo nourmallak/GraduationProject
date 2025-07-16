@@ -1,0 +1,91 @@
+.uploadForm-wrapper {
+    max-width: 600px;
+    margin: auto;
+    margin-top: 50px;
+    padding: 20px;
+    background: #fefefe;
+    border: 1px solid #ddd;
+    border-radius: 16px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    direction: rtl;
+  }
+  
+  .uploadForm-title {
+    font-size: 22px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .uploadForm-box {
+    border: 2px dashed #f8800f;
+    border-radius: 12px;
+    padding: 30px;
+    text-align: center;
+    position: relative;
+    background: #fafafa;
+    transition: border-color 0.3s;
+  }
+  
+  .uploadForm-box:hover {
+    border-color: #999;
+  }
+  
+  .uploadForm-input {
+    opacity: 0;
+    position: absolute;
+    inset: 0;
+    cursor: pointer;
+  }
+  
+  .uploadForm-icon {
+    font-size: 48px;
+    margin-bottom: 10px;
+    color: #888;
+  }
+  
+  .uploadForm-text {
+    color: #666;
+    font-size: 14px;
+  }
+  
+  .uploadForm-previewContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 15px;
+  }
+  
+  .uploadForm-preview {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 12px;
+    border: 2px solid #ddd;
+  }
+  
+  .uploadForm-button {
+    width: 100%;
+    padding: 10px;
+    background-color: #f8800f;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    font-size: 16px;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .uploadForm-button:hover {
+    background-color: #f8800fe0;
+  }
+  
+  .uploadForm-success {
+    margin-top: 15px;
+    color: green;
+    text-align: center;
+    font-weight: bold;
+  }
+  
