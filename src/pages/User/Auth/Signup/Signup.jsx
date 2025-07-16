@@ -1,6 +1,6 @@
 import * as yup from 'yup';
 import { useFormik } from 'formik';
-import style from '../signup/signup.module.css';
+import style from '../Signup/signup.module.css';
 import logo from '../../../../images/logo/logo.png'
 import googleicon from '../../../../images/icons/google.svg'
 import axios from 'axios';
