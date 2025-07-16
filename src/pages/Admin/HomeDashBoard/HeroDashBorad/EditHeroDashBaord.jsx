@@ -4,7 +4,8 @@ import Swal from "sweetalert2";
 import { useForm } from "react-hook-form";
 import { useNavigate } from "react-router-dom";
 import './EditHeroDashBaord.css';
-import { HomePageContext } from "../../../../Context/HomePageContext";
+import { HomePageContext } from "../../../../context/HomePageContext";
+
 
 export default function EditHeroDashBaord() {
   const { register, handleSubmit, setValue } = useForm();
