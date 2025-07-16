@@ -1,5 +1,5 @@
 import React, { useEffect, useState, useContext } from 'react';
-import style from './rules.module.css';
+import style from './Rules.module.css';
 import { FiEdit, FiPlus, FiTrash2 } from 'react-icons/fi';
 import { Button } from 'react-bootstrap';
 import 'animate.css';
