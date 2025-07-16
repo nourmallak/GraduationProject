@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 import axios from "axios";
 import { toast, Bounce } from "react-toastify";
-import "./UpdateFaq.css";
+import "./UpdateFAQ.css";
 
 export default function EditFaq() {
   const navigate = useNavigate();
