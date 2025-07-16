@@ -1,5 +1,5 @@
 import React, { useContext, useEffect, useState } from 'react';
-import style from '../publicArchive/publicArchive.module.css';
+import style from '../PublicArchive/publicArchive.module.css';
 import { Link } from 'react-router-dom';
 import axios from 'axios';
 import 'animate.css';
