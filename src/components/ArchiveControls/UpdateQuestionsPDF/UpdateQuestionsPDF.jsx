@@ -4,7 +4,7 @@ import { useFormik } from 'formik';
 import * as Yup from 'yup';
 import axios from 'axios';
 import { toast, Bounce } from 'react-toastify';
-import styles from './UpdateQuestionsPdf.module.css'; 
+import styles from './UpdateQuestionsPDF.module.css'; 
 
 export default function AddOrUpdateQuestionsPdf({ show, onHide, competition, onSuccess }) {
     const [previewImage, setPreviewImage] = useState(competition?.imageForQuestionsPDF || '');
